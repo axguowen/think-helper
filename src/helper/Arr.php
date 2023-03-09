@@ -354,7 +354,7 @@ class Arr
      * @param array $array
      * @return bool
      */
-    public static function isAssoc($array)
+    public static function isAssoc(array $array)
     {
         $keys = array_keys($array);
 

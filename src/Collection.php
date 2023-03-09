@@ -435,7 +435,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
      * @param array  $value 数据
      * @return static
      */
-    public function whereIn($field, $value)
+    public function whereIn($field, array $value)
     {
         return $this->where($field, 'in', $value);
     }
@@ -447,7 +447,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
      * @param array  $value 数据
      * @return static
      */
-    public function whereNotIn($field, $value)
+    public function whereNotIn($field, array $value)
     {
         return $this->where($field, 'not in', $value);
     }
